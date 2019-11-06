@@ -13,19 +13,22 @@ html {
 }
 
 /*header*/
-
+.header__offset_top {
+  margin-bottom: 2rem !important;
+  margin-top: 2rem !important;
+}
 .header {
   &__navbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    margin-left: 8rem;
+    margin-left: 4rem;
     &_link {
       width: 350px;
       display: flex;
       justify-content: center;
-      margin-right: 8rem;
+      margin-right: 2rem;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
@@ -37,6 +40,32 @@ html {
   }
 }
 
+.burger {
+  position: absolute;
+  top: 2px;
+  left: -0rem;
+  span {
+    display: block;
+    height: 3px;
+    margin-bottom: 4px;
+    width: 18px;
+    background-color: #1b2ecc;
+    position: relative;
+    border-radius: 20px;
+    &:before {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      content: '';
+      left: -5px;
+      background-color: #1b2ecc;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .header__navbar_link.active {
   &:before {
     position: absolute;
@@ -44,7 +73,7 @@ html {
     width: 100%;
     height: 5px;
     background-color: #1b2ecc;
-    bottom: -3.6rem;
+    bottom: -4.6rem;
   }
 }
 
@@ -69,8 +98,13 @@ html {
 }
 
 .slider__item {
-  padding-top: 34rem;
-  padding-bottom: 27rem;
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+  min-height: 885px;
+  display: flex;
+  position: relative;
+  outline: none;
+  align-items: center;
+  justify-content: center;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -127,12 +161,51 @@ html {
   }
 }
 
+.slider__image {
+  top: 0;
+  position: absolute;
+  right: 2rem;
+}
+
+.slick-dots li {
+  list-style-type: none;
+  margin-right: 3rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  button {
+    border: none;
+    width: 11px;
+    height: 11px;
+    background-color: #ffffff;
+    opacity: 0.14;
+    font-size: 0;
+    border-radius: 50%;
+  }
+}
+.slick-dots .slick-active {
+  button {
+    background-color: transparent;
+    border: 3px solid #fff;
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+    outline: none;
+  }
+}
+
+
+ul.slick-dots {
+    position: absolute;
+    bottom: 13rem;
+    left: 10%;
+    display: flex !important;
+    padding-left: 0;
+    transform: translateX(-10%);
+}
 .slider__item_wrapper {
-  max-width: 1530px;
+  max-width: 1536px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-.slider-index_width {
-  width: 100%;
 }
