@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 
 @font-face {
-    font-family: 'Roboto Bk';
-    src: url('font/Roboto-Black.woff2') format('woff2'),
-          url('font/Roboto-Black.woff') format('woff');
+    font-family: 'Roboto - Black';
+    src: url('../font/Roboto-Black.woff2') format('woff2'),
+          url('../font/Roboto-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
+
