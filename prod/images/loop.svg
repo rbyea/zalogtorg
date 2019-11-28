@@ -1,1 +1,10 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.63855 17.63855"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}.cls-2{stroke-linecap:round;}</style></defs><title>loop</title><circle class="cls-1" cx="7.61796" cy="7.61796" r="6.61796"/><line class="cls-2" x1="16.63855" y1="16.63855" x2="12.55353" y2="12.55353"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol viewBox="0 0 17.13247 18.51186" id="loop">
+<g>
+<circle style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;" cx="7.61796" cy="7.61796" r="6.61796"/><line style="stroke-linecap:round;fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;" x1="16.63855" y1="16.63855" x2="12.55353" y2="12.55353"/>
+</g>
+        </symbol>
+    </defs>
+</svg>

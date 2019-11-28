@@ -1,1 +1,10 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.13247 18.51186"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}.cls-2{stroke-linecap:round;}</style></defs><title>man</title><circle class="cls-1" cx="8.63719" cy="6.16883" r="5.16883"/><path class="cls-2" d="M1005.80659,1696.96692a11.24033,11.24033,0,0,1,15.13246-.2678" transform="translate(-1004.80659 -1679.45506)"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol viewBox="0 0 17.13247 18.51186" id="man">
+<g>
+<circle style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;" cx="8.63719" cy="6.16883" r="5.16883"/><path style="stroke-linecap:round;fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;" d="M1005.80659,1696.96692a11.24033,11.24033,0,0,1,15.13246-.2678" transform="translate(-1004.80659 -1679.45506)"/>
+</g>
+        </symbol>
+    </defs>
+</svg>
