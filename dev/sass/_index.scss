@@ -1368,3 +1368,64 @@ height: 1.8rem;
   padding-top: 6rem;
   padding-bottom: 4rem;
 }
+
+
+.registration {
+  min-height: 78.2rem;
+  display: flex;
+}
+
+.registration_col {
+  width: 50%;
+  position: relative;
+}
+
+.registration__item_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + ((100vw - 203%)/2));
+  height: 100%;
+}
+
+
+.registration {
+  &__content {
+    max-width: 53.6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  &__title {
+    text-align: center;
+    color: #19202e;
+    font-family: "Roboto - Black";
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  &__subtitle {
+    margin-top: 0;
+    color: #07060f;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.08rem;
+  }
+  &__item {
+    .input_default {
+      margin-top: 1rem;
+      background-color: #ffffff;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.registration__btn {
+  text-align: center;
+  margin-top: 2rem;
+}

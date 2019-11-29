@@ -246,6 +246,10 @@
 }
 
 @media (max-width: 600px) {
+  .wrapper_large {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .slider__item_title {
     font-size: 2rem;
   }

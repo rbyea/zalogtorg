@@ -1382,6 +1382,64 @@ ul.slick-dots {
     padding-bottom: 4rem;
 }
 
+.registration {
+    display: flex;
+    min-height: 78.2rem;
+}
+
+.registration_col {
+    position: relative;
+    width: 50%;
+}
+
+.registration__item_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + ((100vw - 203%)/2));
+    height: 100%;
+}
+
+.registration__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 53.6rem;
+    height: 100%;
+    justify-content: center;
+}
+
+.registration__title {
+    font-family: 'Roboto - Black';
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #19202e;
+}
+
+.registration__subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: .08rem;
+    color: #07060f;
+}
+
+.registration__item .input_default {
+    margin-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    background-color: #fff;
+}
+
+.registration__btn {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .col {
     box-sizing: border-box;
     max-width: 100%;
@@ -2575,8 +2633,8 @@ ul.slick-dots {
     max-width: 1530px;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 @font-face {
@@ -4961,6 +5019,11 @@ img {
 }
 
 @media (max-width: 600px) {
+    .wrapper_large {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
     .slider__item_title {
         font-size: 2rem;
     }
