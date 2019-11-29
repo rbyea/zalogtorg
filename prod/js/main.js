@@ -91,7 +91,6 @@ $(document).ready(function () {
       slidesToShow: 3,
       slidesToScroll: 3,
       arrows: false,
-      dots: true,
       responsive: [
         {
           breakpoint: 991,
@@ -150,9 +149,29 @@ $(document).ready(function () {
         zoom: 17
       }, {
         searchControlProvider: 'yandex#search'
-      })
+      }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Где нас найти?',
+          balloonContent: 'Россия, г. Краснодар, ул Карасунская, д 86, 2 этаж'
+        }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: '../images/map-icon.png',
+          // Размеры метки.
+          iconImageSize: [37, 37],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+        });
+
+      myMap.geoObjects
+        .add(myPlacemark);
     });
+
   }
+
 });
 
 let headerBgOne = document.getElementById('scene');
