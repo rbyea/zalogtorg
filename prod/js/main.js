@@ -166,6 +166,11 @@ $(document).ready(function () {
     $(this).closest('.toggler').addClass('close');
   });
 
+  $('.sidebar__trigger').click(function (e) {
+    e.preventDefault();
+    $(this).closest('.page__sidebar').toggleClass('active');
+
+  })
   if ($('#map').length) {
     ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {

@@ -1113,6 +1113,7 @@ ul.slick-dots {
     .icon_man {
       width: 20px;
       height: 21px;
+      stroke: #000;
       margin-right: 2rem;
     }
 
@@ -1214,6 +1215,7 @@ ul.slick-dots {
 }
 
 .icon_man {
+  stroke: #000;
   width: 1.8rem;
   height: 1.9rem;
 }
@@ -1253,6 +1255,8 @@ height: 1.8rem;
 }
 
 .header-dark {
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
   text-align: center;
