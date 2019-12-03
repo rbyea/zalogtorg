@@ -1433,6 +1433,8 @@ height: 1.8rem;
 }
 
 .registration__item_img {
+  background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -1440,8 +1442,44 @@ height: 1.8rem;
   height: 100%;
 }
 
+.label_default {
+  color: #8d8f92;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: -0.5rem;
+}
 
 .registration {
+  &__image {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    .images_four {
+      right: -8% !important;
+      bottom: -20% !important;
+      left: auto !important;
+      top: auto !important;
+    }
+    .image_one {
+      top: 23% !important;
+      left: 30% !important;
+    }
+    .image_two {
+      top: auto !important;
+      left: 5% !important;
+      bottom: 0 !important;
+    }
+    .image_three {
+      top: 18% !important;
+      left: auto !important;
+      right: 10% !important;
+    }
+    .image_logo {
+      position: absolute;
+      top: 5% !important;
+      left: 5% !important;
+    }
+  }
   &__content {
     max-width: 53.6rem;
     width: 100%;
@@ -1456,16 +1494,19 @@ height: 1.8rem;
     font-family: "Roboto - Black";
     font-size: 4rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 0;
   }
   &__subtitle {
-    margin-top: 0;
+    margin-bottom: 2.5rem;
     color: #07060f;
     font-size: 1.6rem;
     text-align: center;
     font-weight: 400;
     letter-spacing: 0.08rem;
+    p {
+      margin: 0;
+    }
   }
   &__item {
     .input_default {
@@ -1473,6 +1514,10 @@ height: 1.8rem;
       background-color: #ffffff;
       padding-left: 2rem;
       padding-right: 2rem;
+      outline: none;
+      &:focus {
+        border-color: #1b2ecc;
+      }
     }
   }
 }
@@ -1783,5 +1828,32 @@ width: 13rem;
     border-style: solid;
     border-width: 8px 7.5px 0 7.5px;
     border-color: #dcdcdc transparent transparent transparent;
+  }
+}
+
+.header_star {
+  position: relative;
+  .circle {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    right: -1rem;
+    top: -1.5rem;
+    position: absolute;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    background-color: #28acdf;
+  }
+}
+
+.registration__form {
+  .btn_blue {
+    width: 100%;
+    text-transform: inherit;
   }
 }

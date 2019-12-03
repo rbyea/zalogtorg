@@ -332,285 +332,547 @@
 
     </div>
 
-    <main>
+    <main class="main main_gray">
+        <div class="section crumbs crumbs_offset">
+            <div class="wrapper wrapper_large">
+                <div class="crumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Корзина</a>
+                </div>
+            </div>
+        </div>
+        <section class="section basket basket_offset">
+            <div class="wrapper wrapper_large">
 
-        <div class="page-wrapper lk">
-            <div class="page">
-                <div class="sidebar page__sidebar">
-                    <button class="sidebar__trigger">
-                        Навигация кабинета
-                    </button>
-                    <div class="sidebar__content">
-                        <div class="lk-card">
-                            <div class="lk-card-widget lk-card-widget_offset">
+                <div class="basket__row">
 
-                                <div class="lk-card__subtitle">
-                                    <div class="lk-card__list_logo">
+                    <h2 class="title title_size title_bold">
+                        Корзина
+                    </h2>
 
-                                        <svg class="icon icon_man">
-                                            <use xlink:href="images/man.svg#man">
-                                            </use>
-                                        </svg>
+                    <div class="basket__delete">
+                        <a href="#">
+                            Очистить корзину
+                            <div class="circle"></div>
+                        </a>
+                    </div>
 
-                                    </div>
-                                    <div class="lk-card__list_name">
+                </div>
 
-                                        <span>
-                                            Иван Иванов
-                                        </span>
 
-                                    </div>
-                                </div>
+                <div class="basket__table">
 
-                                <div class="lk-card__col">
-                                    <a href="#" class="lk-card__list active">
-                                        <svg class="icon icon_store">
-                                            <use xlink:href="images/store.svg#store">
-                                            </use>
-                                        </svg>
-                                        Мои заявки
-                                    </a>
-
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_see">
-                                            <use xlink:href="images/see.svg#see">
-                                            </use>
-                                        </svg>
-                                        Личные данные
-                                    </a>
-
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_categories">
-                                            <use xlink:href="images/categories.svg#categories">
-                                            </use>
-                                        </svg>
-                                        Заявки на оценку
-                                    </a>
-
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_cart-join">
-                                            <use xlink:href="images/cart-join.svg#cart-join">
-                                            </use>
-                                        </svg>
-                                        Заявки на покупку
-                                    </a>
-                                </div>
-
-                                <div class="lk-card__join">
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_logout">
-                                            <use xlink:href="images/logout.svg#logout">
-                                            </use>
-                                        </svg>
-                                        Выйти из ЛК
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="basket__table_head">
+                        <div class="product">
+                            <span>Товар</span>
+                        </div>
+                        <div class="name"></div>
+                        <div class="quantity">
+                            <span>Количество</span>
+                        </div>
+                        <div class="price">
+                            <span>
+                                Цена
+                            </span>
+                        </div>
+                        <div class="amount">
+                            <span>
+                                Сумма
+                            </span>
+                        </div>
+                        <div class="delete">
+                            <span>
+                                Удалить
+                            </span>
                         </div>
                     </div>
-                </div>
-                <div class="content page__content page__content_offset">
+                    <div class="basket__table_list">
+                        <div class="list-product">
+                            <img src="images/j1.jpg" alt="">
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Apple iPhone X - 256 Гб серебристый
+                            </p>
+                        </div>
+                        <div class="list-quantity">
+                            <div class="minus">
+                            </div>
+                            <div class="list-quantity__item">
+                                <input type="number" value="1" class="numbers">
+                            </div>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <div class="list-price">
+                            <span>
 
-                    <div class="content__section content__section_offset">
-                        <div class="content-request content-request_offset-bottom">
-                            <h2 class="title title_size title_bold">
-                                Заявки на покупку
-                            </h2>
-                            <div class="content-request__subtitle">
+                                7 000 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-amount">
+                            <span>
+
+                                57 000 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-delete">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="basket__table_list">
+                        <div class="list-product">
+                            <img src="images/j2.jpg" alt="">
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Портативный кардиомонитор для снятия электрокардиограммы в
+                                реальном времени QardioCore
+                            </p>
+                        </div>
+                        <div class="list-quantity">
+                            <div class="minus">
+                            </div>
+                            <div class="list-quantity__item">
+                                <input type="number" value="1" class="numbers">
+                            </div>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <div class="list-price">
+                            <span>
+
+                                120 000 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-amount">
+                            <span>
+
+                                120 000 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-delete">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="basket__table_list">
+                        <div class="list-product">
+                            <img src="images/j3.jpg" alt="">
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Сетевое зарядное устройство Native Union Eclipse Charger Белый/Вишня
+                                (EC-WHT-WD-EU)
+                            </p>
+                        </div>
+                        <div class="list-quantity">
+                            <div class="minus">
+                            </div>
+                            <div class="list-quantity__item">
+                                <input type="number" value="1" class="numbers">
+                            </div>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <div class="list-price">
+                            <span>
+
+                                3 200 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-amount">
+                            <span>
+
+                                3 200 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-delete">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="basket__table_list">
+                        <div class="list-product">
+                            <img src="images/j4.jpg" alt="">
+                        </div>
+                        <div class="list-name">
+                            <p>
+                                Умный многоразовый блокнот Rocketbook The Everlast (Executive)
+                                бирюзовый Neptune Teal (EVR-E-K-CCE)
+                            </p>
+                        </div>
+                        <div class="list-quantity">
+                            <div class="minus">
+                            </div>
+                            <div class="list-quantity__item">
+                                <input type="number" value="1" class="numbers">
+                            </div>
+                            <div class="plus">
+                            </div>
+                        </div>
+                        <div class="list-price">
+                            <span>
+
+                                2 387 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-amount">
+                            <span>
+
+                                2 387 руб.
+
+                            </span>
+                        </div>
+                        <div class="list-delete">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="basket-mobile">
+                    <div class="basket-mobile__item">
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Товар
+                                </span>
+                            </div>
+                            <div class="list-product">
+                                <img src="images/j1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+
+                            </div>
+                            <div class="list-product list-product_bold">
                                 <p>
-                                    Здесь вы можете запросить товар, после чего наши менеджеры смогут его найти и заказать
+
+                                    Apple iPhone X - 256 Гб серебристый
+
                                 </p>
                             </div>
                         </div>
-                        <div class="content-request__item">
-                            <div class="content-request__row content-request__row_border">
-                                <div class="content-request_number">
-                                    <span>№ 83685</span>
-                                </div>
-                                <div class="content-request_link">
-                                    <span class="gray">
-                                        Ожидайте звонок менеджера
-                                    </span>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Количество
+                            </div>
+                            <div class="list-product">
+                                <div class="list-quantity">
+                                    <div class="minus">
+                                    </div>
+                                    <div class="list-quantity__item">
+                                        <input type="number" value="1" class="numbers">
+                                    </div>
+                                    <div class="plus">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col col--xl-4">
-
-                                    <div class="content-request__col content-request__col_center">
-                                        <div class="content-request__images">
-                                            <img src="images/req1.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col col--xl-8">
-
-                                    <div class="content-request__col">
-                                        <h4 class="content-request__title">Ноутбук Apple MacBook Air 13" (2018)</h4>
-                                        <div class="content-request__text">
-                                            <p>Новый MacBook Air весит всего 1.25 кг, а его толщина составляет лишь 156 мм. Но это не
-                                                сказывается
-                                                на мощности ноутбука.
-                                                Ведь в него встроен процессор Intel Core i5 восьмого поколения, который легко справляется с
-                                                разными
-                                                задачами. Память до
-                                                16 ...</p>
-                                        </div>
-                                        <div class="content-request__list">
-                                            <div class="content-request__phone">
-                                                <span>Телефон для связи:</span>
-                                                <a href="rel:89893455648">8(989) 345 56 48</a>
-                                            </div>
-                                            <div class="content-request__delete">
-                                                <a href="#">Удалить заявку
-                                                    <div class="circle"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-
                         </div>
-
-                        <div class="content-request__item">
-                            <div class="content-request__row content-request__row_border">
-                                <div class="content-request_number">
-                                    <span>№ 83685</span>
-                                </div>
-                                <div class="content-request_link">
-                                    <span class="gray">
-                                        Обрабатывается
-                                    </span>
-                                </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Цена
+                                </span>
                             </div>
-                            <div class="row">
-                                <div class="col col--xl-4">
-
-                                    <div class="content-request__col content-request__col_center">
-                                        <div class="content-request__images">
-                                            <img src="images/req2.jpg" alt="">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col col--xl-8">
-
-                                    <div class="content-request__col">
-                                        <h4 class="content-request__title">Сетевое зарядное устройство Native Union Eclipse Charger
-                                            Белый/Вишня (EC-WHT-WD-EU)</h4>
-                                        <div class="content-request__text">
-                                            <p>Устали от кучи грязных проводов на столе или полу, которые постоянно путаются? В компании Native
-                                                Union было решено
-                                                создать уникальный аксессуар, который способен решить проблему спутанных кабелей и подарить вам
-                                                невероятный комфорт ...</p>
-                                        </div>
-                                        <div class="content-request__list">
-                                            <div class="content-request__phone">
-                                                <span>Телефон для связи:</span>
-                                                <a href="rel:89893455648">8(989) 345 56 48</a>
-                                            </div>
-                                            <div class="content-request__delete">
-                                                <a href="#">Удалить заявку
-                                                    <div class="circle"></div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
+                            <div class="list-product">
+                                <span>7 000 руб.</span>
                             </div>
-
-
-
-
                         </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Сумма
+                            </div>
+                            <div class="list-product">
+                                <span>
 
-                        <div class="section section-request" style="background-image: url('images/2.jpg');">
+                                    57 000 руб.
 
-                            <div class="section-request__center">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Удалить
+                            </div>
+                            <div class="list-product">
 
-                                <h2 class="section-request__title">
-                                    Ищете товар? Наши менеджеры помогут вам
-                                </h2>
-
-                                <div class="section-request__button">
-                                    <a href="#popup-req" class="btn btn_blue btn_size popup-trigger">Оставить заявку</a>
+                                <div class="list-delete">
+                                    <div class="circle"></div>
                                 </div>
 
                             </div>
 
                         </div>
                     </div>
+                    <div class="basket-mobile__item">
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Товар
+                                </span>
+                            </div>
+                            <div class="list-product">
+                                <img src="images/j2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+
+                            </div>
+                            <div class="list-product list-product_bold">
+                                <p>
+
+                                    Портативный кардиомонитор для снятия электрокардиограммы в
+                                    реальном времени QardioCore
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Количество
+                            </div>
+                            <div class="list-product">
+                                <div class="list-quantity">
+                                    <div class="minus">
+                                    </div>
+                                    <div class="list-quantity__item">
+                                        <input type="number" value="1" class="numbers">
+                                    </div>
+                                    <div class="plus">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Цена
+                                </span>
+                            </div>
+                            <div class="list-product">
+                                <span>120 000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Сумма
+                            </div>
+                            <div class="list-product">
+                                <span>
+
+                                    120 000 руб.
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Удалить
+                            </div>
+                            <div class="list-product">
+
+                                <div class="list-delete">
+                                    <div class="circle"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="basket-mobile__item">
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Товар
+                                </span>
+                            </div>
+                            <div class="list-product">
+                                <img src="images/j3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+
+                            </div>
+                            <div class="list-product list-product_bold">
+                                <p>
+
+                                    Сетевое зарядное устройство Native Union Eclipse Charger Белый/Вишня
+                                    (EC-WHT-WD-EU)
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Количество
+                            </div>
+                            <div class="list-product">
+                                <div class="list-quantity">
+                                    <div class="minus">
+                                    </div>
+                                    <div class="list-quantity__item">
+                                        <input type="number" value="1" class="numbers">
+                                    </div>
+                                    <div class="plus">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Цена
+                                </span>
+                            </div>
+                            <div class="list-product">
+                                <span>3 200 руб.</span>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Сумма
+                            </div>
+                            <div class="list-product">
+                                <span>
+
+                                    3 200 руб.
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Удалить
+                            </div>
+                            <div class="list-product">
+
+                                <div class="list-delete">
+                                    <div class="circle"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="basket-mobile__item">
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Товар
+                                </span>
+                            </div>
+                            <div class="list-product">
+                                <img src="images/j4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+
+                            </div>
+                            <div class="list-product list-product_bold">
+                                <p>
+
+                                    Умный многоразовый блокнот Rocketbook The Everlast (Executive)
+                                    бирюзовый Neptune Teal (EVR-E-K-CCE)
 
 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Количество
+                            </div>
+                            <div class="list-product">
+                                <div class="list-quantity">
+                                    <div class="minus">
+                                    </div>
+                                    <div class="list-quantity__item">
+                                        <input type="number" value="1" class="numbers">
+                                    </div>
+                                    <div class="plus">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                <span>
+                                    Цена
+                                </span>
+                            </div>
+                            <div class="list-product">
+                                <span>7 000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Сумма
+                            </div>
+                            <div class="list-product">
+                                <span>
+
+                                    57 000 руб.
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="basket-mobile__list">
+                            <div class="product">
+                                Удалить
+                            </div>
+                            <div class="list-product">
+
+                                <div class="list-delete">
+                                    <div class="circle"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="basket__footer">
+
+                    <div class="basket__addr">
+                        <div class="basket__item">
+                            <h4 class="baket__head">Забрать заказ можно по адресу:</h4>
+                            <div class="basket__sub">
+                                <p>ул. Карасунская, д 86, 2 этаж.</p>
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <h4 class="baket__head">Способ оплаты:</h4>
+                            <div class="basket__sub">
+                                <p>Картой при получении товара</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="basket__buttons">
+                        <div class="basket__price">
+                            <span class="number">
+                                200 000
+                            </span>
+                            <span>руб.</span>
+                        </div>
+                        <a href="#" class="btn btn_blue btn_size">Оформить заявку</a>
+                    </div>
 
                 </div>
             </div>
-        </div>
+        </section>
 
     </main>
-
-    <div class="popup popup_default " id="popup-req">
-
-        <button title="Close (Esc)" type="button" class="mfp-close"></button>
-
-        <div class="popup__content_image">
-            <div>
-                <img src="images/popup.jpg" alt="">
-            </div>
-            <div>
-                <img src="images/popup.jpg" alt="">
-            </div>
-            <div>
-                <img src="images/popup.jpg" alt="">
-            </div>
-            <div>
-                <img src="images/popup.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="popup__content_text">
-
-            <h2 class="popup__content_title">
-                Сетевое зарядное устройство Native Union Eclipse Charger
-                Белый/Вишня (EC-WHT-WD-EU)
-            </h2>
-            <div class="popup__content_subtitle">
-                <p>
-
-                    Устали от кучи грязных проводов на столе или полу, которые постоянно путаются? В компании Native Union было
-                    решено
-                    создать уникальный аксессуар, который способен решить проблему спутанных кабелей и подарить вам невероятный
-                    комфорт
-                    использования. Зарядное устройство Native Union Eclipse Charger обладает продуманной конструкцией и
-                    неповторимым
-                    функционалом. Сетевая зарядка оснащена тремя высокоскоростными портами USB с технологией Smart IC, что
-                    позволит вам без
-                    хлопот заряжать до трёх устройств одновременно.
-
-                </p>
-            </div>
-
-            <div class="content-request content-request__list">
-                <div class="content-request__phone">
-                    <span>Телефон для связи:</span>
-                    <a href="rel:89893455648">8(989) 345 56 48</a>
-                </div>
-                <div class="content-request__delete">
-                    <a href="#">Удалить заявку
-                        <div class="circle"></div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
 
     <footer class="footer footer_offset">
         <div class="wrapper wrapper_large">

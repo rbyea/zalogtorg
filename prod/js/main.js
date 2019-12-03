@@ -5,9 +5,23 @@ $(document).ready(function () {
     arrows: false,
   });
 
+
+
+
+
+  $('.btn_blue').click(function () {
+    $('.popup__content_image .slick-slider').slick('setPosition');
+  });
+
+
   if ($('.reviews-slider__item').length) {
     $('.reviews-slider__item').matchHeight();
   }
+  if ($('.basket-mobile__item').length) {
+    $('.basket-mobile__item').matchHeight();
+  }
+
+
 
   if ($('.catalog__item_footer').length) {
     $('.catalog__item_footer').matchHeight({
@@ -20,6 +34,42 @@ $(document).ready(function () {
       byRow: 0
     });
   }
+
+
+  if ($('.phone').length) {
+    $(".phone").mask("+7(999) 999-99-99");
+  }
+
+  // if ($('.popup-trigger').length) {
+  //   $('.popup-trigger').magnificPopup({
+  //     type: 'inline',
+  //     callbacks: {
+  //       open: function () {
+  //         $('.popup__content_image .slick-slider').slick('setPosition');
+  //       },
+  //     }
+  //   });
+  // }
+
+  $('.popup-trigger').click(function (e) {
+    e.preventDefault();
+    $.magnificPopup.open({
+      items: {
+        src: $('#popup-req'),
+      },
+      type: 'inline',
+      midClick: true,
+      callbacks: {
+        open: function () {
+          $('.popup__content_image').not('.slick-initialized').slick({
+            arrows: true,
+          });
+          // $('.popup__content_image .slick-slider').slick('setPosition');
+        },
+      },
+    });
+  })
+
 
   $('.reviews-slider').slick({
     slidesToShow: 3,
@@ -79,6 +129,7 @@ $(document).ready(function () {
       tabWidget.find('.tab').eq($(this).index()).addClass('active');
     }
   })
+
   if ($('.select_js').length) {
     $('.select_js').select2({
       width: '100%',
@@ -201,13 +252,39 @@ $(document).ready(function () {
 
   }
 
+  if ($('.minus').length) {
+    $(".minus").click(function () {
+      numbers = +$(this).closest(".list-quantity").find("input").val();
+      result = numbers - 1;
+      if (result < 1) {
+        result = 1;
+      }
+      $(this).closest(".list-quantity").find("input").val(result);
+      return true;
+    });
+  }
+  if ($('.plus').length) {
+    $(".plus").click(function () {
+      numbers = +$(this).closest(".list-quantity").find("input").val();
+      result = numbers + 1;
+      $(this).closest(".list-quantity").find("input").val(result);
+      return true;
+    });
+  }
+
 });
 
-let headerBgOne = document.getElementById('scene');
-let headerBgTwo = document.getElementById('scene2');
-let headerBgThree = document.getElementById('scene3');
+if ($('#scene, #scene2, #scene3').length) {
+
+  let headerBgOne = document.getElementById('scene');
+  let headerBgTwo = document.getElementById('scene2');
+  let headerBgThree = document.getElementById('scene3');
 
 
-let headerBgOneInstance = new Parallax(headerBgOne);
-let headerBgTwoInstance = new Parallax(headerBgTwo);
-let headerBgThreeInstance = new Parallax(headerBgThree);
+  let headerBgOneInstance = new Parallax(headerBgOne);
+  let headerBgTwoInstance = new Parallax(headerBgTwo);
+  let headerBgThreeInstance = new Parallax(headerBgThree);
+
+}
+
+
