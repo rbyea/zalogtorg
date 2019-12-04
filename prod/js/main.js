@@ -5,10 +5,6 @@ $(document).ready(function () {
     arrows: false,
   });
 
-
-
-
-
   $('.btn_blue').click(function () {
     $('.popup__content_image .slick-slider').slick('setPosition');
   });
@@ -55,10 +51,14 @@ $(document).ready(function () {
   if ($('input[name="files"]').length) {
 
     $('input[name="files"]').fileuploader({
-      // Options will go here
+
+      thumbnails: {
+        removeConfirmation: false,
+      }
     });
 
   }
+
   $('.popup-trigger').click(function (e) {
     e.preventDefault();
     $.magnificPopup.open({
@@ -116,11 +116,18 @@ $(document).ready(function () {
       {
         breakpoint: 1300,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         }
       },
       {
-        breakpoint: 990,
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      ,
+      {
+        breakpoint: 450,
         settings: {
           slidesToShow: 1,
         }

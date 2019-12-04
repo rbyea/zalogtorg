@@ -531,6 +531,7 @@ button {
 }
 
 .popup__content_text {
+  padding-top: 4rem;
   padding-left: 7rem;
   padding-right: 7rem;
   padding-bottom: 4rem;
@@ -663,4 +664,151 @@ button {
   .btn {
     margin-top: 0;
   }
+}
+
+.fileuploader-input-caption {
+  display: none !important;
+}
+
+.fileuploader {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.fileuploader-items .fileuploader-item .fileuploader-action {
+  left: 0 !important;
+  position: absolute !important;
+}
+
+.fileuploader-items .fileuploader-item .column-title div {
+  width: 9rem !important;
+}
+
+.fileuploader-items .fileuploader-item {
+  padding: 10px 16px 10px 22px !important;
+}
+
+
+.fileuploader-items .fileuploader-item .column-title {
+  padding-left: 30px !important;
+}
+.fileuploader-items .fileuploader-item .fileuploader-action.fileuploader-action-remove i{
+  background: #1b2ecc !important;
+  font-size: 0 !important;
+  box-shadow: none !important;
+  position: relative;
+  transform: rotate(45deg);
+  &:before {
+    content: '';
+    border-top: 2px solid #fff;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 1rem;
+  }
+  &:after {
+    content: '';
+    border-left: 2px solid #fff;
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+    position: absolute;
+    height: 1rem;
+  }
+}
+.fileuploader-items .fileuploader-item {
+  padding-left: 0 !important;
+  border-bottom: 0 !important;
+}
+
+
+.fileuploader-items {
+  margin-left: -3.5rem;
+  margin-bottom: 2rem !important;
+}
+
+.popup__content__head {
+  color: #171717;
+  font-family: "Roboto - Black";
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.fileuploader-items .fileuploader-items-list {
+  padding-left: 1.6rem !important;
+}
+
+.column-thumbnail {
+  display: none;
+}
+.fileuploader-items .fileuploader-item .column-title {
+  display: flex !important;
+  flex: inherit !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileuploader-input-button {
+  font-size: 0;
+  box-shadow: none !important;
+  background: #fff !important;
+  position: absolute;
+  bottom: auto;
+  top: -4.5rem !important;
+  padding: 0 !important;
+  &:before {
+    content: '';
+    background: url('../images/downer.png') no-repeat;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    left: -3.5rem;
+    top: 1px;
+  }
+}
+
+.registration__item_files {
+  position: relative;
+  .label_file {
+    padding-left: 3.5rem;
+  }
+}
+
+.registration__item_files {
+  margin-bottom: 0;
+}
+
+.column-title {
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+  color: #2436ce !important;
+  span {
+    margin-top: 0.5rem;
+  }
+}
+
+.label_file {
+  color: #383a3c;
+  font-size: 1.6rem;
+  display: block;
+  font-weight: 400;
+}
+
+.popup__form {
+
+  .registration__btn {
+    margin-top: 3rem;
+    .btn {
+      width: 100%;
+    }
+  }
+
+}
+
+.popup__form.registration {
+  min-height: auto !important;
 }

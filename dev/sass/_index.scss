@@ -1467,7 +1467,7 @@ height: 1.8rem;
     .image_two {
       top: auto !important;
       left: 5% !important;
-      bottom: 0 !important;
+      bottom: -14% !important;
     }
     .image_three {
       top: 18% !important;
@@ -1870,5 +1870,46 @@ width: 13rem;
   .btn_blue {
     width: 100%;
     text-transform: inherit;
+  }
+}
+
+.internal__center {
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper_large {
+  z-index: 2;
+}
+
+.product__img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  .image_one {
+    top: -8rem !important;
+    bottom: auto;
+    position: absolute !important;
+    right: 1% !important;
+    left: auto !important;
+  }
+  .image_two {
+    position: absolute;
+    top: 20% !important;
+    left: 41% !important;
+  }
+  .images_four {
+    position: absolute;
+    left: auto !important;
+    top: 44% !important;
+    right: -18%;
+  }
+  .image_three {
+    top: 11% !important;
+    right: -25%;
+    bottom: AUTO;
+    left: auto !important;
+    position: absolute !important;
   }
 }

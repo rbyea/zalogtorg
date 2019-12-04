@@ -539,7 +539,7 @@
                                 </h2>
 
                                 <div class="section-request__button">
-                                    <a href="#popup-req" class="btn btn_blue btn_size popup-trigger">Оставить заявку</a>
+                                    <a href="#popup-downer" class="btn btn_blue btn_size popup-dow">Оставить заявку</a>
                                 </div>
 
                             </div>
@@ -555,7 +555,7 @@
 
     </main>
 
-    <div class="popup popup_default" id="popup-dow">
+    <div class="popup popup_default mfp-hide" id="popup-downer">
 
         <button title="Close (Esc)" type="button" class="mfp-close"></button>
 
@@ -567,7 +567,7 @@
             </h2>
             <div class="popup__form registration">
 
-                <form method="post" enctype="multipart/form-data">
+                <form enctype="multipart/form-data">
 
                     <div class="registration__item">
 
@@ -607,30 +607,31 @@
                         <textarea class="textarea textarea_default"></textarea>
 
                     </div>
+                    <div class="registration__item registration__item_files">
+                        <label class="label label_default label_file">
+                            Прикрепить фото товара (максимальный вес файла 1 МБ)
+                            <input type="file" name="files">
+                        </label>
+
+
+                    </div>
+
                     <div class="registration__item">
 
-                        <input type="file">
+                        <div class="form__checkbox">
+                            <input type="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox">Нажимая на кнопку, я подтверждаю свое согласие на <a href="#">«Политику
+                                    в отношении обработки персональных данных»</a></label>
+                        </div>
 
                     </div>
 
                     <div class="registration__btn">
-                        <button type="submit" class="btn btn_blue btn_size">Выслать</button>
+                        <button type="submit" class="btn btn_blue btn_size">Отправить</button>
                     </div>
 
                 </form>
 
-            </div>
-
-            <div class="content-request content-request__list">
-                <div class="content-request__phone">
-                    <span>Телефон для связи:</span>
-                    <a href="rel:89893455648">8(989) 345 56 48</a>
-                </div>
-                <div class="content-request__delete">
-                    <a href="#">Удалить заявку
-                        <div class="circle"></div>
-                    </a>
-                </div>
             </div>
 
         </div>
