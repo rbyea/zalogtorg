@@ -51,6 +51,14 @@ $(document).ready(function () {
   //   });
   // }
 
+
+  if ($('input[name="files"]').length) {
+
+    $('input[name="files"]').fileuploader({
+      // Options will go here
+    });
+
+  }
   $('.popup-trigger').click(function (e) {
     e.preventDefault();
     $.magnificPopup.open({
@@ -69,6 +77,12 @@ $(document).ready(function () {
       },
     });
   })
+  if ($('.popup-dow').length) {
+    $('.popup-dow').magnificPopup({
+      type: 'inline'
+    });
+  }
+
 
 
   $('.reviews-slider').slick({

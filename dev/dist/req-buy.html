@@ -82,11 +82,11 @@
         <div class="content__section content__section_offset">
           <div class="content-request content-request_offset-bottom">
             <h2 class="title title_size title_bold">
-              Заявки на покупку
+              Заявки на оценку
             </h2>
             <div class="content-request__subtitle">
               <p>
-                Здесь вы можете запросить товар, после чего наши менеджеры смогут его найти и заказать
+                Здесь вы видите товары, которые отправили нам на оценку
               </p>
             </div>
           </div>
@@ -96,8 +96,8 @@
                 <span>№ 83685</span>
               </div>
               <div class="content-request_link">
-                <span class="gray">
-                  Ожидайте звонок менеджера
+                <span class="data">
+                  6 сентября 2018
                 </span>
               </div>
             </div>
@@ -151,8 +151,8 @@
                 <span>№ 83685</span>
               </div>
               <div class="content-request_link">
-                <span class="gray">
-                  Обрабатывается
+                <span class="data">
+                  6 сентября 2018
                 </span>
               </div>
             </div>
@@ -198,8 +198,7 @@
 
           </div>
 
-          <div class="section section-request"
-            style="background-image: url('images/req-bg.jpg');     background-position: center;">
+          <div class="section section-request" style="background-image: url('images/req-bg.jpg');">
 
             <div class="section-request__center">
 
@@ -223,6 +222,88 @@
   </div>
 
 </main>
+
+<div class="popup popup_default" id="popup-dow">
+
+  <button title="Close (Esc)" type="button" class="mfp-close"></button>
+
+  <div class="popup__content_text">
+    <h2 class="popup__content__head">
+
+      Подать заявку на покупку
+
+    </h2>
+    <div class="popup__form registration">
+
+      <form method="post" enctype="multipart/form-data">
+
+        <div class="registration__item">
+
+          <div class="label label_default">
+            Имя
+          </div>
+
+          <input type="text" class="input input_default">
+
+        </div>
+
+        <div class="registration__item">
+
+          <div class="label label_default">
+            Телефон
+          </div>
+
+          <input type="tel" class="input phone input_default">
+
+        </div>
+
+        <div class="registration__item">
+
+          <div class="label label_default">
+            Название товара
+          </div>
+
+          <input type="text" class="input input_default">
+
+        </div>
+
+        <div class="registration__item">
+
+          <div class="label label_default">
+            Описание товара
+          </div>
+          <textarea class="textarea textarea_default"></textarea>
+
+        </div>
+        <div class="registration__item">
+
+          <input type="file">
+
+        </div>
+
+        <div class="registration__btn">
+          <button type="submit" class="btn btn_blue btn_size">Выслать</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="content-request content-request__list">
+      <div class="content-request__phone">
+        <span>Телефон для связи:</span>
+        <a href="rel:89893455648">8(989) 345 56 48</a>
+      </div>
+      <div class="content-request__delete">
+        <a href="#">Удалить заявку
+          <div class="circle"></div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
 <div class="popup popup_default mfp-hide" id="popup-req">
 
