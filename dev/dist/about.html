@@ -11,12 +11,8 @@
 </head>
 
 <body>
-  <div class="header-dark">
-    <a href="#">
-      Готовишься к новым покупкам? Сравни свою цену с «Залоторг»!
-    </a>
-  </div>
-  <header class="header">
+
+  <header class="header header_reset">
     <div class="wrapper wrapper_large">
       <div class="row">
         <div class="col col--lg-2">
@@ -333,7 +329,7 @@
   <section class="section internal internal-bg internal-height internal__center"
     style="background-image: url('images/about.jpg')">
 
-    <div class="wrapper wrapper_large">
+    <div class="wrapper wrapper_large wrapper_init">
 
       <div class="section crumbs crumbs_offset">
         <div class="crumbs">
@@ -355,7 +351,7 @@
   <main class="main main_gray">
 
     <section class="section conditions conditions_offset">
-      <div class="wrapper wrapper_large">
+      <div class="wrapper wrapper_large ">
 
         <h2 class="title title_size title_bold">
           Условия сдачи товаров
@@ -549,7 +545,7 @@
           </div>
 
           <div class="assessment__button">
-            <a href="#" class="btn btn_blue btn_size">Оценить имущество</a>
+            <a href="#popup-downer" class="btn btn_blue btn_size popup-dow">Оценить имущество</a>
           </div>
         </div>
       </div>
@@ -557,5 +553,88 @@
 
 
   </main>
+
+  <div class="popup popup-width popup_default mfp-hide" id="popup-downer">
+
+    <button title="Close (Esc)" type="button" class="mfp-close"></button>
+
+    <div class="popup__content_text">
+      <h2 class="popup__content__head">
+
+        Подать заявку на покупку
+
+      </h2>
+      <div class="popup__form registration">
+
+        <form enctype="multipart/form-data">
+
+          <div class="registration__item">
+
+            <div class="label label_default">
+              Имя
+            </div>
+
+            <input type="text" class="input input_default">
+
+          </div>
+
+          <div class="registration__item">
+
+            <div class="label label_default">
+              Телефон
+            </div>
+
+            <input type="tel" class="input phone input_default">
+
+          </div>
+
+          <div class="registration__item">
+
+            <div class="label label_default">
+              Название товара
+            </div>
+
+            <input type="text" class="input input_default">
+
+          </div>
+
+          <div class="registration__item">
+
+            <div class="label label_default">
+              Описание товара
+            </div>
+            <textarea class="textarea textarea_default"></textarea>
+
+          </div>
+          <div class="registration__item registration__item_files">
+            <label class="label label_default label_file">
+              Прикрепить фото товара (максимальный вес файла 1 МБ)
+              <input type="file" name="files">
+            </label>
+
+
+          </div>
+
+          <div class="registration__item">
+
+            <div class="form__checkbox">
+              <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox">Нажимая на кнопку, я подтверждаю свое согласие на <a href="#">«Политику
+                  в отношении обработки персональных данных»</a></label>
+            </div>
+
+          </div>
+
+          <div class="registration__btn">
+            <button type="submit" class="btn btn_blue">Отправить</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
 
   //= footer.html

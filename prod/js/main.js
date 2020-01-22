@@ -83,7 +83,7 @@ $(document).ready(function () {
     });
   }
 
-
+  // $("#sidebar").stick_in_parent();
 
   $('.reviews-slider').slick({
     slidesToShow: 3,
@@ -159,6 +159,21 @@ $(document).ready(function () {
     });
   }
 
+  $('.header__navbar_hover').click(function (e) {
+    e.preventDefault();
+
+    $(this).closest('body').find('.header__navbar_widget').toggleClass('active');
+
+  })
+
+  $(document).mouseup(function (e) { // событие клика по веб-документу
+    var div = $(".header__navbar_widget , .header__navbar_hover"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      div.removeClass('active'); // скрываем его
+    }
+  });
+
   $('#selected').change(function () {
     // $('.product_offset_top').eq($(this).val()).toggleClass('active');
     var Eq = $(this).val();
@@ -167,7 +182,7 @@ $(document).ready(function () {
     el.find('.tab').removeClass('active');
     el.find('.tab').eq(Eq).addClass('active');
     $('html, body').animate({
-      scrollTop: $(el.find('.catalog__item')).offset().top
+      scrollTop: $(el.find('.catalog__title')).offset().top
     }, 500);
     // $('.match-height').matchHeight();
   });
@@ -180,6 +195,16 @@ $(document).ready(function () {
   $('.hamburger--emphatic').click(function () {
     $(this).toggleClass('is-active');
   })
+
+
+  if ($(window).width() < 991) {
+    $('.togglers-trigger').click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('active');
+      $(this).closest('.togglers').find('.togglers__content').stop().slideToggle();
+      $(this).closest('.togglers').toggleClass('active');
+    });
+  }
 
   if ($(window).width() < 1200) {
     $('.slider-leaders').slick({
@@ -243,35 +268,6 @@ $(document).ready(function () {
     $(this).closest('.page__sidebar').toggleClass('active');
 
   })
-  if ($('#map').length) {
-    ymaps.ready(function () {
-      var myMap = new ymaps.Map('map', {
-        center: [45.027731074575456, 38.974307],
-        zoom: 17
-      }, {
-        searchControlProvider: 'yandex#search'
-      }),
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Где нас найти?',
-          balloonContent: 'Россия, г. Краснодар, ул Карасунская, д 86, 2 этаж'
-        }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: '../images/map-icon.png',
-          // Размеры метки.
-          iconImageSize: [37, 37],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -38]
-        });
-
-      myMap.geoObjects
-        .add(myPlacemark);
-    });
-
-  }
 
   if ($('.minus').length) {
     $(".minus").click(function () {

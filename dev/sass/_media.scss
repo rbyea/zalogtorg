@@ -147,6 +147,12 @@
 }
 
 @media (max-width: 1450px) {
+  .catalog__sidebar {
+    padding: 2rem;
+  }
+  .catalog__title {
+    margin-bottom: 2rem;
+  }
     .registration__content {
       padding-top: 5rem;
       padding-bottom: 5rem;
@@ -242,6 +248,14 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .header__navbar_widget {
+    max-width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 1380px) {
   .slider__item_title {
     max-width: 100%;
@@ -288,6 +302,16 @@
 }
 
 @media (max-width: 1250px) {
+  .catalog__sidebar_list .catalog__sidebar_link {
+    font-size: 1.6rem;
+  }
+  .catalog__sidebar_item {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .catalog__sidebar_box {
+    padding-left: 0;
+  }
   .slider__item {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   }
@@ -342,6 +366,25 @@
 }
 
 @media (max-width: 1200px) {
+  .catalog__sidebar_list .circle {
+    flex-shrink: 0;
+    margin-right: 1.2rem;
+  }
+  .catalog__item_imgae {
+    display: block;
+    width: 100%;
+  }
+  .catalog__item_imgae img {
+    width: 100%;
+    height: 100%;
+  }
+  .catalog__sidebar_list .catalog__sidebar_link {
+    line-height: 1.2;
+  }
+  .popup__content__head {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
   .registration__mobile_col {
     display: none;
   }
@@ -373,8 +416,20 @@
   .catalog__item {
     margin-bottom: 2rem;
   }
+  .catalog__content .catalog__item_imgae {
+    font-size: 0;
+  }
   .catalog__item_imgae {
     height: 300px;
+  }
+
+  .catalog__content {
+    .catalog__item_imgae {
+      height: 100%;
+      img {
+              margin-top: -3rem;
+      }
+    }
   }
   .header__navbar_link {
     font-size: 12px;
@@ -411,6 +466,20 @@
   }
   .content__project_button .holder_row {
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1170px) {
+  .header__dropdown_link {
+    padding-right: 5rem;
+  }
+  .header__dropdown_link {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .product-list_col {
+    min-height: 32.5rem;
   }
 }
 
@@ -487,6 +556,79 @@
 }
 
 @media (max-width: 991px) {
+
+  .catalog__title_list {
+    margin-bottom: 2rem !important;
+    .title {
+      margin-bottom: 0;
+    }
+  }
+  .catalog__title {
+    font-size: 1.8rem;
+  }
+  .catalog__sidebar.active {
+    .catalog__sidebar_mob {
+      .circle {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .catalog__pagination {
+    margin-bottom: 3rem;
+  }
+  .catalog__pagination .circle {
+    flex-shrink: 0;
+  }
+  .catalog__pagination .catalog__number a {
+    margin-right: 1.5rem;
+  }
+  .catalog__number span {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .catalog__item_footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .catalog_offset {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .catalog__sidebar  {
+    margin-bottom: 2rem;
+
+  }
+  .crumbs_offset {
+    padding-top: 0;
+  }
+  .catalog__navigation_checkbox .form__checkbox {
+    margin-right: 3rem;
+  }
+  .catalog__sidebar_mob {
+    .circle {
+      display: block;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .togglers__content {
+    display: none;
+  }
+  .catalog__title {
+    margin-bottom: 0;
+  }
+  .catalog__sidebar_navbar {
+    margin-top: 2rem;
+  }
+  .popup__content__head {
+    font-size: 2.2rem;
+  }
+  .politics_offset {
+    padding-bottom: 6rem;
+  }
   .benefit_offset {
     padding-top: 4rem;
     padding-bottom: 5rem;
@@ -858,6 +1000,16 @@
 }
 
 @media (max-width: 750px) {
+
+  .catalog__navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog__navigation_checkbox {
+    margin-bottom: 2rem;
+  }
+
   .product__img .image_one {
     top: -2rem !important;
   }
@@ -974,6 +1126,14 @@
 }
 
 @media (max-width: 600px) {
+  .catalog__title_list {
+    .title {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .reviews-slider__item {
+    padding: 2rem;
+  }
   .benefit__list {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1329,6 +1489,29 @@
 }
 
 @media(max-width: 400px) {
+  .catalog__sidebar_box .catalog__sidebar_link {
+    font-size: 1.4rem;
+  }
+  .catalog__navigation_checkbox {
+    flex-direction: column;
+    align-items: flex-start;
+    .form__checkbox {
+      margin-bottom: 1.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .catalog__sidebar {
+    padding: 1rem;
+  }
+  .catalog__navigation_sort {
+    flex-wrap: wrap;
+    .catalog__navigation_desc {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
   .error_offset {
     padding-top: 4rem;
     padding-bottom: 4rem;

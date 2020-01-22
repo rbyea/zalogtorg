@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=&amp;lang=ru_RU"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 
-<body>
-    <div class="header-dark">
-        <a href="#">
-            Готовишься к новым покупкам? Сравни свою цену с «Залоторг»!
-        </a>
-    </div>
+<body class="body-init">
+
     <header class="header">
         <div class="wrapper wrapper_large">
             <div class="row">
@@ -36,140 +33,6 @@
                                     <span></span>
                                 </div>
                             </a>
-
-                            <div class="header__navbar_widget">
-
-                                <div class="header__dropdown">
-                                    <div class="product-list">
-                                        <div class="product-list_col">
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Недвижимое имущество
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Движимое имущество
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Часы
-                                                </a>
-                                            </div>
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Ювелирные изделия
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Бытовая и цифровая
-                                                    техника
-                                                </a>
-                                            </div>
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Конфискат
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                        <div class="product-list_col">
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Бытовая техника
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Фото и видеотехника
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Игры и притавки
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Телефоны
-                                                </a>
-                                            </div>
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Компьютерная техника
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Хобби и отдых
-                                                </a>
-                                            </div>
-
-                                        </div>
-                                        <div class="product-list_col">
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    ВидеоАудио
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Портативная / мобильная
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Бытовая
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="product-list_col">
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Телевизоры
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Видео
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Аксессуары для ТВ и
-                                                    видео
-                                                </a>
-                                            </div>
-
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Проекторы
-                                                </a>
-                                            </div>
-                                            <div class="header__dropdown_box">
-                                                <a href="#" class="header__dropdown_link">
-                                                    Цифровое телевидение
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
                         </div>
 
                         <a href="#" class="header__navbar_link active">О нас</a>
@@ -195,7 +58,7 @@
                             </a>
 
                             <a href="#" class="header_star">
-
+                                <div class="circle">4</div>
                                 <svg class="icon icon_star-transparent">
                                     <use xlink:href="images/favourite.svg#favor">
                                     </use>
@@ -227,7 +90,145 @@
             </div>
         </div>
     </header>
+    <div class="header__navbar_widget">
 
+        <div class="header__dropdown">
+
+            <div class="product-list">
+
+                <div class="product-list_col">
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Недвижимое имущество
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Движимое имущество
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Часы
+                        </a>
+                    </div>
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Ювелирные изделия
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Бытовая и цифровая
+                            техника
+                        </a>
+                    </div>
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Конфискат
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="product-list_col">
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Бытовая техника
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Фото и видеотехника
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Игры и притавки
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Телефоны
+                        </a>
+                    </div>
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Компьютерная техника
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Хобби и отдых
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="product-list_col">
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            ВидеоАудио
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Портативная / мобильная
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Бытовая
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-list_col">
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Телевизоры
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Видео
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Аксессуары для ТВ и
+                            видео
+                        </a>
+                    </div>
+
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Проекторы
+                        </a>
+                    </div>
+                    <div class="header__dropdown_box">
+                        <a href="#" class="header__dropdown_link">
+                            Цифровое телевидение
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <div class="header-mobile toggler">
         <div class="wrapper wrapper_large">
@@ -247,7 +248,7 @@
                         </a>
 
                         <a href="#" class="header_star">
-
+                            <span class="circle">4</span>
                             <svg class="icon icon_star-transparent">
                                 <use xlink:href="images/favourite.svg#favor">
                                 </use>
@@ -328,6 +329,9 @@
                 </div>
             </div>
         </div>
+
+
+
     </div>
 
     <main class="main main_gray">
@@ -470,9 +474,39 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/jquery.event.frame.js"></script>
     <script src="js/select2.full.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
 
+
+    <script>
+        ymaps.ready(function() {
+            var myMap = new ymaps.Map('map', {
+                    center: [45.027731074575456, 38.974307],
+                    zoom: 17
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Где нас найти?',
+                    balloonContent: 'Россия, г. Краснодар, ул Карасунская, д 86, 2 этаж'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: '../images/map-icon.png',
+                    // Размеры метки.
+                    iconImageSize: [37, 37],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                });
+
+            myMap.geoObjects
+                .add(myPlacemark);
+        });
+    </script>
 
 </body>
 
