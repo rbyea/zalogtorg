@@ -8,20 +8,30 @@
 
       <div class="registration">
         <div class="registration_col">
+
           <div class="registration__content">
 
             <h2 class="registration__title">
-
-              Изменение пароля
-
+              Регистраиця
             </h2>
-            <div class="registration__subtitle">
-              <p>
-                Введите контрольную строку, новый пароль и подтверждение пароля
-              </p>
+
+            <div class="registration__subtitle registration__subtitle_offset">
+              <span>
+                Уже зарегистрированы? Перейти на страницу <a href="#">вход</a>
+              </span>
             </div>
+
             <div class="registration__form">
               <form>
+                <div class="registration__item">
+
+                  <div class="label label_default">
+                    Имя
+                  </div>
+
+                  <input type="text" class="input input_default">
+
+                </div>
                 <div class="registration__item">
 
                   <div class="label label_default">
@@ -31,36 +41,27 @@
                   <input type="email" class="input input_default">
 
                 </div>
+
                 <div class="registration__item">
 
                   <div class="label label_default">
-                    Контрольная строка
-                  </div>
-
-                  <input type="text" class="input input_default">
-
-                </div>
-                <div class="registration__item">
-
-                  <div class="label label_default">
-                    Новый пароль
+                    Пароль
                   </div>
 
                   <input type="password" class="input input_default">
 
                 </div>
-                <div class="registration__item">
 
-                  <div class="label label_default">
-                    Повторите пароль
+                <div class="registration__checkbox">
+                  <div class="form__checkbox">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox">Нажимая на кнопку, я подтверждаю свое согласие на <a href="#">«Политику
+                        в отношении обработки персональных данных»</a></label>
                   </div>
-
-                  <input type="password" class="input input_default">
-
                 </div>
 
                 <div class="registration__btn">
-                  <a href="#" class="btn btn_blue btn_width btn_size">Восстановить</a>
+                  <button type="submit" class="btn btn_blue btn_width btn_size">Зарегистрироваться</button>
                 </div>
 
               </form>

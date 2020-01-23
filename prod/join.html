@@ -337,185 +337,82 @@
 
     </div>
 
-    <main>
+    <main class="main main_gray">
 
-        <div class="page-wrapper lk">
-            <div class="page">
-                <div class="sidebar page__sidebar">
-                    <button class="sidebar__trigger">
-                        Навигация кабинета
-                    </button>
-                    <div class="sidebar__content">
-                        <div class="lk-card">
-                            <div class="lk-card-widget lk-card-widget_offset">
+        <section class="section">
 
-                                <div class="lk-card__subtitle">
-                                    <div class="lk-card__list_logo">
+            <div class="wrapper wrapper_large">
 
-                                        <svg class="icon icon_man">
-                                            <use xlink:href="images/man.svg#man">
-                                            </use>
-                                        </svg>
+                <div class="registration">
+                    <div class="registration_col">
 
-                                    </div>
-                                    <div class="lk-card__list_name">
+                        <div class="registration__content">
 
-                                        <span>
-                                            Иван Иванов
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <div class="lk-card__col">
-                                    <a href="#" class="lk-card__list active">
-                                        <svg class="icon icon_store">
-                                            <use xlink:href="images/store.svg#store">
-                                            </use>
-                                        </svg>
-                                        Мои заявки
-                                    </a>
-
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_see">
-                                            <use xlink:href="images/see.svg#see">
-                                            </use>
-                                        </svg>
-                                        Личные данные
-                                    </a>
-
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_categories">
-                                            <use xlink:href="images/categories.svg#categories">
-                                            </use>
-                                        </svg>
-                                        Заявки на оценку
-                                    </a>
-
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_cart-join">
-                                            <use xlink:href="images/cart-join.svg#cart-join">
-                                            </use>
-                                        </svg>
-                                        Заявки на покупку
-                                    </a>
-                                </div>
-
-                                <div class="lk-card__join">
-                                    <a href="#" class="lk-card__list">
-                                        <svg class="icon icon_logout">
-                                            <use xlink:href="images/logout.svg#logout">
-                                            </use>
-                                        </svg>
-                                        <span>
-                                            Выйти из ЛК
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content page__content page__content_offset">
-
-                    <div class="content__section content__section-lk content__section_offset">
-                        <div class="content-request lk-offset content-request_offset-bottom">
-                            <h2 class="title title_size title_bold">
-                                Личные данные
+                            <h2 class="registration__title">
+                                Вход в Личный кабинет
                             </h2>
-                            <div class="lk lk__content">
-                                <div class="lk__item">
-                                    <h4 class="lk__title lk__title_border">
-                                        Персональные данные
-                                    </h4>
-                                    <form class="form">
-                                        <div class="registration__item">
 
-                                            <div class="label label_default">
-                                                Фамилия
-                                            </div>
+                            <div class="registration__subtitle">
+                                <p>
+                                    Еще не зарегистрированы? Перейти на страницу <a href="#">регистрации</a>
+                                </p>
+                            </div>
+                            <div class="registration__form">
+                                <form>
+                                    <div class="registration__item">
 
-                                            <input type="text" class="input input_default">
-
-                                        </div>
-                                        <div class="registration__item">
-
-                                            <div class="label label_default">
-                                                Имя
-                                            </div>
-
-                                            <input type="text" class="input input_default">
-
-                                        </div>
-                                        <div class="registration__item">
-
-                                            <div class="label label_default">
-                                                Телефон
-                                            </div>
-
-                                            <input type="tel" class="input phone input_default">
-
-                                        </div>
-                                        <div class="registration__item">
-
-                                            <div class="label label_default">
-                                                E-mail
-                                            </div>
-
-                                            <input type="email" class="input input_default">
-
+                                        <div class="label label_default">
+                                            Логин
                                         </div>
 
-                                        <div class="registration__btn">
-                                            <div class="form__checkbox">
-                                                <input type="checkbox" class="checkbox" id="checkbox">
-                                                <label for="checkbox">Подписаться на рассылку новостей</label>
+                                        <input type="text" class="input input_default">
 
-                                            </div>
-                                            <button type="submit" class="btn btn_blue">Сохранить</button>
+                                    </div>
+                                    <div class="registration__item">
+
+                                        <div class="label label_default">
+                                            Пароль
                                         </div>
 
-                                    </form>
-                                </div>
-                                <div class="lk__item">
-                                    <h4 class="lh__title lk__title_border">
-                                        Изменение пароля
-                                    </h4>
-                                    <form>
-                                        <div class="registration__item">
+                                        <input type="password" class="input input_default">
 
-                                            <div class="label label_default">
-                                                Введите новый пароль
-                                            </div>
+                                    </div>
 
-                                            <input type="password" class="input input_default">
+                                    <div class="registration__btn">
+                                        <button type="submit" class="btn btn_blue btn_width btn_size">Войти</button>
+                                    </div>
 
-                                        </div>
-                                        <div class="registration__item">
+                                    <div class="registration__subtitle registration__subtitle_offset">
+                                        <span>
+                                            Забыли пароль? Перейти на страницу <a href="#">восстановление пароля</a>
+                                        </span>
+                                    </div>
 
-                                            <div class="label label_default">
-                                                Повторите новый пароль
-                                            </div>
+                                </form>
+                            </div>
 
-                                            <input type="password" class="input input_default">
+                        </div>
 
-                                        </div>
-
-                                        <div class="registration__btn registration__btn_center">
-                                            <button type="submit" class="btn btn_blue">Сохранить</button>
-                                        </div>
-
-                                    </form>
-                                </div>
+                    </div>
+                    <div class="registration_col registration__mobile registration__mobile_col">
+                        <div class="registration__item registration__item_img" style="background-image: url('images/reg-bg.jpg');">
+                            <div class="registration__image" id="scene">
+                                <img data-depth="0.1" class="image_logo" src="images/logo-reg.png" alt="">
+                                <img data-depth="0.2" class="image_one" src="images/clocks.png" alt="">
+                                <img data-depth="0.5" src="images/mic.png" class="image_two" alt="">
+                                <img data-depth="0.4" class="image_three" src="images/player.png" alt="">
+                                <img data-depth="0.2" src="images/pad.png" alt="" class="images_four">
                             </div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
-        </div>
+
+        </section>
 
     </main>
+
 
     <footer class="footer footer_offset">
         <div class="wrapper wrapper_large">

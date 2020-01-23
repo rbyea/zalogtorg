@@ -257,6 +257,37 @@ $(document).ready(function () {
     $(this).closest('.header-wrapper').find('.header-mobile__mask').addClass('active');
   });
 
+  $('.card-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    asNavFor: '.card-slider-nav',
+    arrows: false,
+  })
+
+  $('.card-slider-nav').slick({
+    focusOnSelect: true,
+    slidesToShow: 5,
+    arrows: false,
+    asNavFor: '.card-slider',
+    responsive: [
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+    ]
+  })
+
+
+  $('.card-slider').slick();
+
   $('.close-js').click(function (e) {
     e.preventDefault();
     $(this).closest('.close-column-js').addClass('close');

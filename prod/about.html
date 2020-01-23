@@ -428,6 +428,7 @@
         </section>
 
         <div class="map-content">
+            <div class="about-map" id="map"></div>
 
             <div class="map-content__widget">
                 <h3 class="map-content__title">
@@ -443,7 +444,6 @@
                 </a>
             </div>
 
-            <div class="about-map" id="map"></div>
         </div>
 
         <section class="section profitably profitably_offset">
@@ -739,6 +739,34 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
 
+    <script>
+        ymaps.ready(function() {
+            var myMap = new ymaps.Map('map', {
+                    center: [45.027731074575456, 38.974307],
+                    zoom: 17
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Где нас найти?',
+                    balloonContent: 'Россия, г. Краснодар, ул Карасунская, д 86, 2 этаж'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'images/map-icon.png',
+                    // Размеры метки.
+                    iconImageSize: [37, 37],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                });
+
+            myMap.geoObjects
+                .add(myPlacemark);
+        });
+    </script>
 
 </body>
 
